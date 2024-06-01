@@ -18,25 +18,64 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima earum expedita porro consectetur
                 soluta repellat ab iusto esse harum, eveniet, voluptate, quisquam hic. Id enim assumenda illum hic,
                 voluptas dicta tempore! Aliquid consequuntur explicabo odit excepturi officiis, animi perferendis.</p>
-            <button class="btn-primary">CONTACT US</button>
+            <button class="btn-primary"><span class="btn-primary-text">CONTACT US</span></button>
         </div>
         <img class="hero-img" src="./img/hero.png" alt="">
     </section>
 
     <section class="section bg-gray services-section">
-        <h3 class="text-highlight">WHAT WE DO</h3>
-        <div class="heading-section">
-            <h1>SERVICES WE PROVIDE FOR YOU</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum hic reiciendis voluptate illum ea,
-                consequatur, repellendus doloremque reprehenderit harum et inventore facere omnis voluptatum voluptatem!
-                Tempore nulla accusantium molestias!</p>
+        <div class="services-heading-container">
+            <h3 class="text-highlight">WHAT WE DO</h3>
+            <div style="margin-top: 1rem; margin-bottom: 2rem;" class="heading-section">
+                <h1>SERVICES WE PROVIDE FOR YOU</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum hic reiciendis voluptate illum
+                    ea,
+                    consequatur, repellendus doloremque reprehenderit harum et inventore facere omnis voluptatum
+                    voluptatem!
+                    Tempore nulla accusantium molestias!</p>
+            </div>
         </div>
         <div class="slider-section">
             <div class="slide-container">
-
+                <div class="slide slide-1">
+                    <div class="inslide-container">
+                        <img src="./img/icon.png" alt="">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="https://fylehq.com" target="_blank" class="btn-slide">READ MORE <img src="./img/arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="inslide-container">
+                        <img src="./img/icon.png" alt="">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="https://fylehq.com" target="_blank" class="btn-slide">READ MORE <img src="./img/arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="inslide-container">
+                        <img src="./img/icon.png" alt="">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="https://fylehq.com" target="_blank" class="btn-slide">READ MORE <img src="./img/arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="slide slide-4">
+                    <div class="inslide-container">
+                        <img src="./img/icon.png" alt="">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="https://fylehq.com" target="_blank" class="btn-slide">READ MORE <img src="./img/arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <button class="slide-arrow-btn left-arrow" onclick="triggerLeftSlideAnimation()"> < </button>
+                <button class="slide-arrow-btn right-arrow" onclick="triggerRightSlideAnimation()"> > </button>
             </div>
             <div class="index-container">
-
+                <div class="outer-index-dot highlighted-dot"><div class="inner-index-dot">&nbsp;</div></div>
+                <div class="outer-index-dot"><div class="inner-index-dot">&nbsp;</div></div>
+                <div class="outer-index-dot"><div class="inner-index-dot">&nbsp;</div></div>
             </div>
         </div>
     </section>
@@ -94,30 +133,48 @@
 
     <section class="section growth-section">
         <h3 class="text-highlight">EXPERTS GROWTH</h3>
-        <h1>OUR COMPANY GROWTH</h1>
+        <h1 style="margin-bottom: 2rem;">OUR COMPANY GROWTH</h1>
         <div class="growth-card-container">
             <div class="growth-card">
-                <img src="" alt="" class="growth-icon">
-                <span class="growth-card-heading"></span>
+                <img src="./img/heart.png" alt="" class="growth-icon">
+                <span class="growth-card-heading">199+</span>
                 <p>Satisfied Customers</p>
             </div>
             <div class="growth-card">
-                <img src="" alt="" class="growth-icon">
-                <span class="growth-card-heading"></span>
+                <img src="./img/clock.png" alt="" class="growth-icon">
+                <span class="growth-card-heading">1591+</span>
                 <p>Satisfied Customers</p>
             </div>
             <div class="growth-card">
-                <img src="" alt="" class="growth-icon">
-                <span class="growth-card-heading"></span>
+                <img src="./img/tick.png" alt="" class="growth-icon">
+                <span class="growth-card-heading">283+</span>
                 <p>Satisfied Customers</p>
             </div>
             <div class="growth-card">
-                <img src="" alt="" class="growth-icon">
-                <span class="growth-card-heading"></span>
+                <img src="./img/trophy.png" alt="" class="growth-icon">
+                <span class="growth-card-heading">75+</span>
                 <p>Satisfied Customers</p>
             </div>
         </div>
     </section>
+
+    <section class="section feedback-section">
+        <h3 class="text-highlight">CLIENT'S FEEDBACK</h3>
+        <h1 style="margin-bottom: 2rem;">HEAR FROM OUR CLIENTS</h1>
+        <div class="feedback-container">
+            <p class="feedback-body">
+                <img src="./img/Quotemarks-left.png" alt="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, aliquid quod ab quae, praesentium veniam
+                quasi eius quis doloribus odit minima illo earum sed modi? Beatae obcaecati ipsum nisi necessitatibus!
+            </p>
+            <p class="author"><span class="text-highlight author-name">JANNAT TUMPA</span> - COO, AMERIMAR ENTERPRISES,
+                INC.</p>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/companyimg.png" alt="">
+    </footer>
 
 </body>
 <script src="./index.js"></script>

@@ -6,6 +6,7 @@
     --col-bg-highlight: #FF3147;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
+    font-weight: 500;
 }
 
 *{
@@ -26,6 +27,11 @@ body h3{
     font-size: 1.5rem;
 }
 
+body h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .text-highlight {
     color: var(--col-bg-highlight);
     font-weight: 500;
@@ -34,6 +40,10 @@ body h3{
 .section{
     width: 100%;
     padding: 1rem;
+}
+
+.bg-gray{
+    background-color: var(--col-bg-secondary);
 }
 
 .hero-section{
@@ -66,4 +76,35 @@ body h3{
     outline: none;
     cursor: pointer;
     border-radius: 3px;
+}
+
+/* WHY US SECTION */
+.why-us-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.why-us-section .card-container{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.why-us-section .card-container .card{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.why-us-section .card-container .card img{
+    height: 4.5rem;
 }

@@ -39,7 +39,7 @@ body h4{
 
 .section{
     width: 100%;
-    padding: 1rem;
+    padding: 5rem;
 }
 
 .bg-gray{
@@ -88,7 +88,7 @@ body h4{
 
 .why-us-section .card-container{
     display: flex;
-    width: 65%;
+    width: 70%;
     margin: auto;
     flex-direction: row;
     align-items: center;
@@ -107,4 +107,55 @@ body h4{
 
 .why-us-section .card-container .card img{
     height: 4.5rem;
+}
+
+/* PROJECT SECTION */
+.project-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin: auto;
+    min-height: 400px;
+    height: fit-content;
+    /* border: 1px solid black; */
+}
+
+.project-container .img-container{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/project-2.png');
+    background-position: center;
+    transition: 0.2s ease;
+}
+
+.project-container .content-container{
+    /* border: 1px solid red; */
+}
+
+.project-container .content-container .content-box{
+    padding: 3rem 2rem;
+    /* border: 1px solid blue; */
+    background-color: #F6F6F6;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.project-container .content-container .content-box h4{
+    margin-bottom: 1rem;
+}
+
+.project-container .content-container .highlighted-content-box {
+    background-color: var(--col-bg-highlight);
+    color: white;
 }

@@ -3,6 +3,15 @@ let projectContentBoxList = document.querySelectorAll('.content-box')
 let growthCardHeadingList = document.querySelectorAll('.growth-card-heading')
 let serviceSlideList = document.querySelectorAll('.slide')
 let indexDotList = document.querySelectorAll('.outer-index-dot')
+let popupContainer = document.querySelector('#popup-container')
+let formContainer = document.querySelector('#form-container')
+let textInputs = document.querySelectorAll('.form-input')
+// let textInputSpans = document.querySelectorAll('.span-label')
+
+// textInputSpans.forEach(element => {
+//     element.style.transform = 'translateY(-180%)'
+//     element.style.fontSize = '0.9rem'
+// })
 
 let projectImgList = [
     'https://images.pexels.com/photos/209339/pexels-photo-209339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -113,4 +122,32 @@ function triggerLeftSlideAnimation(){
         serviceSlideList[ind].style.backgroundImage = `url("${serviceSlideImgList[(indexDotInd * 4) + ind]}")`
     })
     indexDotList[indexDotInd].classList.add('highlighted-dot')
+}
+
+function showPopup(){
+    popupContainer.style.visibility = 'visible'
+    formContainer.style.transform = 'translateY(0)'
+    formContainer.style.opacity = '1'
+}
+
+function hidePopup(){
+    popupContainer.style.visibility = 'hidden'
+    formContainer.style.transform = 'translateY(-20px)'
+    formContainer.style.opacity = '0'
+}
+
+function moveLabel(ind){
+    let element = textInputs[ind].previousElementSibling
+    if(textInputs[ind].value) {
+        element.style.transform = 'translateY(-180%)'
+        element.style.fontSize = '0.9rem'
+    }
+}
+
+function moveLabelDown(ind) {
+    let element = textInputs[ind].previousElementSibling
+    if(textInputs[ind].value == ''){
+        element.style.transform = 'translateY(-50%)'
+        element.style.fontSize = '1.1rem'
+    }
 }

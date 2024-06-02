@@ -6,9 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="popup-container" id="popup-container">
+        <div class="form-container" id="form-container">
+            <button class="cross-icon" onclick="hidePopup()">
+                <img src="./img/cross_icon.png" alt="">
+            </button>
+            <h2>Talk to us</h2>
+            <form action="https://getform.io/f/nbdoznxa" method="POST">
+                <label class="form-label" for="email">
+                    <span class="span-label">Work Email*</span>
+                    <input class="form-input" oninput="moveLabel(0)" onblur="moveLabelDown(0)" type="email" name="email" id="email" required>
+                </label>
+                <div class="input-row">
+                    <label class="form-label" for="fname">
+                        <span class="span-label">First Name*</span>
+                        <input class="form-input" oninput="moveLabel(1)" onblur="moveLabelDown(1)" type="text" name="fname" id="fname" required>
+                    </label>
+                    <label class="form-label" for="lname">
+                        <span class="span-label">Last Name*</span>
+                        <input class="form-input" oninput="moveLabel(2)" onblur="moveLabelDown(2)" type="text" name="lname" id="lname" required>
+                    </label>
+                </div>
+                <label class="form-checkbox">
+                    <input type="checkbox" name="tnc" id="tnc" required>
+                    <span>I agree to Fyle's terms and conditions, and provide consent to send me communication.</span>
+                </label>
+                <button style="z-index: 99999; width: 100%;" class="form-btn btn-primary">CONTACT US</button>
+            </form>
+        </div>
+    </div>
+
     <section class="section hero-section">
         <div class="left-section">
             <div>
@@ -18,7 +49,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima earum expedita porro consectetur
                 soluta repellat ab iusto esse harum, eveniet, voluptate, quisquam hic. Id enim assumenda illum hic,
                 voluptas dicta tempore! Aliquid consequuntur explicabo odit excepturi officiis, animi perferendis.</p>
-            <button class="btn-primary"><span class="btn-primary-text">CONTACT US</span></button>
+            <button class="btn-primary" id="hero-section-btn-primary" onclick="showPopup()"><span class="btn-primary-text">CONTACT US</span></button>
         </div>
         <img class="hero-img" src="./img/hero.png" alt="">
     </section>
